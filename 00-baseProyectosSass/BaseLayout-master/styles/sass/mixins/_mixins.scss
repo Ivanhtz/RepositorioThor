@@ -1,0 +1,31 @@
+@use "../base/variables" as *;
+
+@mixin movil-s {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin movil-m {
+  @media screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin movil-l {
+  @media screen and (max-width: 425px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}

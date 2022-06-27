@@ -1,0 +1,74 @@
+@use "variables" as *;
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: $text-font;
+  color: $text-color;
+  background-color: $main-color;
+  line-height: 1.4em;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: $text-color;
+  font-weight: bold;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style: none;
+}
+
+::selection {
+  background-color: $main-color;
+  color: $secondary-color;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: $title-color;
+  font-family: $title-font;
+  font-weight: 800;
+}
