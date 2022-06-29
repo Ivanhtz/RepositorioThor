@@ -1,0 +1,85 @@
+$primary: hsl(199, 33%, 15%);
+$secondary: hsl(200, 35%, 19%);
+$success: hsl(178, 60%, 48%);
+$warning: hsl(39, 88%, 58%);
+$light: hsl(200, 23%, 72%);
+
+// Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+$font-family-sans-serif: 'Montserrat';
+
+// // Iconos de Bootstrap
+// @import '../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
+// Iconos de Google
+// @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+// node
+@import '../../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+//* Nuestros estilos
+
+body {
+  background: $primary;
+}
+
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 1rem;  
+}
+
+.tile {
+  box-shadow: 0px 6px darken($primary, 7%);
+}
+
+.grueso {
+  font-weight: 900;
+}
+
+.buttons {
+  display: grid;
+  gap:1rem;
+  grid-template-columns: repeat(3, 100px);
+
+}
+.title-x {
+  color: $success;
+  
+}
+
+.title-o {
+  color:hsl(39, 88%, 58%)
+}
+
+.button-refresh {
+  margin-left: 60px;
+  width: 40px;
+  box-shadow: 0px 2px darken($light, 7%);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 1rem;
+}
+
+.result p {
+ margin-bottom: 0;
+ color:black;
+ font-size: 15px;
+
+
+}
+
+.result-num {
+  font-size: 15px;
+  font-weight:500;
+  font-weight: bold;
+  
+}

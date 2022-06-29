@@ -1,0 +1,15 @@
+@use "../base/tools" as t;
+@use "../base/variables" as v;
+@use "../mixins/mixins" as m;
+
+.header {
+  background-color: v.$third-color;
+
+  nav {
+    display: flex;
+    a {
+      color: white;
+      padding: 20px;
+    }
+  }
+}
